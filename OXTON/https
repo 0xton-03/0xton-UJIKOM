@@ -1,0 +1,12 @@
+protocol = "https"
+# World Wide Web (www)
+subdomain = "www"
+
+# WhatsApp.com
+# WhatsApp.id
+domain = f"{subdomain}.RizBoy.id"
+print(domain)
+
+# (Internet Protocol) IP Addres 192.168.0.10
+
+url = f"{protocol}://{domain}/{3000}"
