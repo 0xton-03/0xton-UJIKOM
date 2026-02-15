@@ -8,7 +8,7 @@ const BarangCard = (props) => {
   return (
   <Card className={`h-full justify-between`} >
     <CardHeader>
-      <img className='w-full min-h-80 bg-white rounded-xl max-h-80 object-contain' src={props.barang.image} alt={`gambar ${props.barang.title}`} />
+      <img className='w-full min-h-80 bg-white rounded-xl max-h-80 object-cover' src={props.barang.image} alt={`gambar ${props.barang.title}`} />
     </CardHeader>
 
     <CardContent  className={`h-full justify-between`}>
@@ -29,7 +29,7 @@ const BarangCard = (props) => {
 <CardFooter className={`flex justify-between`}>
   {/* PRICE */}
     <span className='text-red-800 font-bold text-3xl'>
-       $ {props.barang.price}
+       RP. {props.barang.price}
     </span>
     
     <div>

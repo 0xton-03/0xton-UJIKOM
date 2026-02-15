@@ -11,29 +11,19 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 import axios from "axios";
 import { ShoppingBag } from "lucide-react";
 import React, { useEffect } from "react";
-
+import daftarBarang from "./daftar barang/daftarBarang.json";
+import Diskon from "@/componens/diskon";
+import { Input } from "@/components/ui/input";
 
 
 
 // page home adalah komponen
 const PageHome = ()=>{
-    const [data,setData] = React.useState([])
-    
-    const daftarHero =[
-        "https://static.vecteezy.com/system/resources/previews/043/340/156/non_2x/3d-winter-seasonal-clothing-collection-ads-banner-concept-poster-card-vector.jpg"
-    ]
+    const data = daftarBarang
+         const daftarHero = ["/benner/3.jpg", "/benner/2-copy.png", ]
 
-    const listHero =[
-        {
-            url:"https://static.vecteezy.com/system/resources/previews/032/207/297/non_2x/winter-clothes-and-warm-accessories-banner-cozy-winter-banner-hand-drawn-warm-clothes-in-doodle-style-casual-warm-clothes-poster-cozy-winter-with-elements-winter-wardrobe-accessories-vector.jpg",
-            text:"outfit-winter",
-            cta:"limitededition",
-            link:"/product/outfit"
-
-        }
-    ]
        const [Keranjang,setKeranjang] = React.useState([])
-       const [diskon,setDiskon] = React.useState(50)
+       const [diskon,setDiskon] = React.useState(0)
        const [potongHarga,setPotonganHarga] = React.useState(0)
        const [totalHarga,setTotalHarga] = React.useState(0)
        const [checkoutPrice,setCheckoutPrice] = React.useState(0)
@@ -46,15 +36,7 @@ const PageHome = ()=>{
 
     },[diskon,potongHarga,totalHarga,Keranjang])
 // denagn aray 0 hanya satu kali
-    useEffect(()=>{
-      const fethcingData = async (path)=>{
-          const response = await axios.get(`https://fakestoreapi.com/${path}`)
-          console.log (response.data)
-          setData(response.data)
-      }
-      fethcingData('products')
-
-    },[])
+    
  const handleKeranjang =(item)=>{
         setKeranjang([...Keranjang,item])    
     }
@@ -68,6 +50,7 @@ const PageHome = ()=>{
                     <ShoppingBag/>
                     {Keranjang?.length}
                 </Button>
+            </DrawerTrigger>
                 <DrawerContent>
                     <DrawerHeader >
                         <DrawerTitle>
@@ -91,29 +74,18 @@ const PageHome = ()=>{
                           }  
                     </ScrollArea>
                     <DrawerFooter>
-                        <div className="flex justify-between">
-                            <span className=" text-xl font-extrabold text-black">Total Harga</span>
-                            <span className="text-xl font-semibold text-black ">${totalHarga}</span>
-                        </div>
-                        <div className="flex justify-between">
-                            <span className="text-xl font-semibold text-black "> Diskon</span>
-                            <span className="text-xl font-semibold text-black ">{diskon}%</span>
-                        </div>
-                        <div className="flex justify-end gap-5 items-end">
-                            <span className="text-xl font-extrabold text-neutral-400 line-through">{checkoutPrice}</span>
-                            <span className="text-3xl font-extrabold text-black ">$ {totalHarga} </span>
-                        </div>
-                        <Button className={"bold"}>
-                            CHECKOUT
-                        </Button>
+                        <Input placeHolder="Masukan Diskon" onChange = {(event)=> setDiskon(event.target.value)}>
+                        </Input>
+                        <Diskon diskon = {diskon} harga = {Keranjang.reduce((acc,data)=>(acc+=data.price),0)}>
+
+                        </Diskon>
                     </DrawerFooter>
                </DrawerContent>
-            </DrawerTrigger>
          </Drawer>
 </section>
          
          <div>
-            <Header/>
+            <Header to = "/base" cta ="layout"/>
          </div>
 
       
@@ -122,7 +94,7 @@ const PageHome = ()=>{
                     {daftarHero.map ((item,i)=>{
                         return(
                              <CarouselItem>
-                                <img src= {item} alt="gamba1" className="w-full h-screen object-cover" />
+                                <img src= {item} alt="gamba1" className="w-full object-cover" />
                                 </CarouselItem>
                         )
                     })}
@@ -145,19 +117,19 @@ const PageHome = ()=>{
 
 
 
-          <Card className={`max-w-2xl mx-auto`}>
+          {/* <Card className={`max-w-2xl mx-auto`}>
             <CardHeader>
               <CardTitle> Product</CardTitle>
-            </CardHeader>
+            </CardHeader>   
             <CardContent>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro recusandae atque aliquam perferendis magni, quis consectetur ad fugit repudiandae ratione voluptatum obcaecati necessitatibus, illo velit! Fugit unde porro deserunt provident modi! Sunt, cupiditate officia repellat aut, cumque saepe quo nulla veniam quisquam deserunt tempora molestiae consequatur! Explicabo voluptates id similique?
+             Website ini sebuah komposisi fashion pria bernuansa luxury streetwear yang kuat, gelap, dan penuh karakter. Beragam item fashion premium ditata secara artistik di atas meja kayu bergaya vintage, menciptakan kesan eksklusif dan berkelas. Dominasi warna hitam, cokelat tua, dan aksen metal menghadirkan aura maskulin, elegan, dan edgy yang identik dengan gaya pria modern berjiwa bebas. Jaket, hoodie bergrafis gothic, tas kulit mewah, sepatu boots dan sneakers hitam mengilap berpadu dengan aksesoris seperti ikat pinggang, jam, parfum, dan celana berdetail bordir, membentuk satu kesatuan gaya yang tegas dan berani. Keseluruhan visual ini memancarkan citra gaya hidup pria premium percaya diri, stylish, dan penuh statement sangat cocok untuk menggambarkan identitas fashion kelas atas yang eksklusif dan berkarakter. 
             </CardContent>
               <CardFooter>
                 <Button>BUY</Button>
                 </CardFooter>
 
 
-          </Card>
+          </Card> */}
 
 
 

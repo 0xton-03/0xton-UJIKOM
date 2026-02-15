@@ -1,0 +1,99 @@
+
+[
+  {
+    "id": 1,
+    "title": "BALENCIAGA CITY GRAFFITI LEATHER BAG",
+    "price":  28000000,
+    "description": "Tas Balenciaga City Graffiti ini adalah perpaduan sempurna antara kemewahan dan gaya streetwear modern. Mengusung desain ikonik khas Balenciaga dengan aksen tulisan grafiti bold, tas ini dirancang untuk kamu yang ingin tampil beda, percaya diri, dan berkelas. Modelnya timeless, mudah dipadukan dengan berbagai gaya outfit, baik kasual maupun semi formal",
+    "category": "PREMIUM EDITION",
+    "image": "/foto/01.png"
+  },
+  {
+    "id": 2,
+    "title": "Balenciaga Denim Jacket",
+    "price": 15000000,
+    "description": "Jaket denim Balenciaga ini merupakan fashion item premium yang memadukan gaya klasik dengan sentuhan modern. Dengan desain minimalis namun tetap berkarakter, jaket ini sangat cocok untuk melengkapi berbagai gaya outfit kasual maupun streetwear. Logo besar “BALENCIAGA” pada bagian punggung memberikan kesan eksklusif dan mewah, menjadikannya statement piece yang langsung mencuri perhatian",
+    "category": "Jacket Black Edition",
+    "image": "/foto/02.png"
+  },
+  {
+    "id": 3,
+    "title": "Balenciaga Black Leather Jacket",
+    "price":  40000000,
+    "description": "jaket kulit Balenciaga ini hadir dengan desain minimalis, maskulin, dan berkelas. Dibuat dengan gaya luxury streetwear, jaket ini menampilkan tampilan serba hitam yang elegan serta detail tulisan timbul “BALENCIAGA” pada bagian lengan kanan yang memberi kesan eksklusif. Modelnya timeless dan mudah dipadukan dengan berbagai gaya, menjadikannya pilihan sempurna untuk melengkapi outfit kasual maupun semi-formal.",
+    "category": "PREMIUM EDITION",
+    "image": "/foto/03.png"
+  },
+  {
+    "id": 4,
+    "title": "Premium Black Long Coat",
+    "price":  6000000,
+    "description": "Coat panjang berwarna hitam ini hadir dengan desain klasik dan elegan yang cocok untuk berbagai kesempatan formal maupun semi-formal. Model double-breasted dengan potongan rapi memberikan kesan mewah, dewasa, dan profesional. Desainnya timeless sehingga dapat digunakan dalam jangka panjang tanpa kehilangan gaya.",
+    "category": "Classic Elegant Style",
+    "image": "/foto/04.png"
+  },
+  {
+    "id": 5,
+    "title": "Crome Heart Black Denim Flared Jeans",
+    "price":  4000000,
+    "description": "CCelana jeans hitam ini hadir dengan desain unik dan berkarakter kuat, cocok untuk kamu yang menyukai gaya streetwear dan vintage fashion. Model potongan flare (melebar di bagian bawah) memberikan tampilan retro yang stylish dan berbeda dari jeans biasa. Pada bagian belakang terdapat bordir motif cross yang tegas dan artistik, menambah kesan edgy sekaligus premium.",
+    "category": "Cross Embroidery Edition",
+    "image": "/foto/05.png"
+  },
+  {
+    "id": 6,
+    "title": "Vintage Silver Ring Set",
+    "price":  14000000,
+    "description": "Set cincin bergaya vintage gothic ini hadir dengan desain artistik dan berkarakter kuat. Terdiri dari dua model cincin unik berbahan metal silver tone dengan detail ukiran yang elegan, cocok untuk melengkapi gaya fashion streetwear, rock, maupun klasik. Desainnya maskulin, mewah, dan penuh detail, menjadikan aksesori ini sebagai statement piece yang menarik perhatian.",
+    "category": "Gothic Style Edition",
+    "image": "/foto/06.png"
+  },
+  {
+    "id": 7,
+    "title": "Balenciaga Style Distressed High-Top Sneakers",
+    "price":  18000000,
+    "description": "Sneakers high-top dengan desain vintage dan efek distressed yang unik ini menghadirkan tampilan streetwear premium yang berani dan stylish. Dengan warna krem klasik dan detail robek artistik, sepatu ini cocok untuk kamu yang ingin tampil beda, edgy, dan fashionable.",
+    "category": "Vintage Edition",
+    "image": "/foto/10.png"
+  },
+  {
+    "id": 8,
+    "title": "Dior Luxury Black Quilted Handbag ",
+    "price":  80000000,
+    "description": "Tas wanita berwarna hitam dengan desain quilted klasik ini menghadirkan tampilan elegan, mewah, dan berkelas. Dilengkapi dengan aksen hardware emas dan gantungan logo yang ikonik, tas ini sangat cocok untuk menunjang gaya formal maupun casual chic.",
+    "category": "Elegant Premium Edition",
+    "image": "/foto/11.png"
+  },
+  {
+    "id": 9,
+    "title": "Adidas x SpongeBob",
+    "price":  2500000,
+    "description": "Sneakers eksklusif hasil kolaborasi antara Adidas dan SpongeBob SquarePants, hadir dengan tampilan elegan berwarna hitam glossy yang modern dan stylish. Sepatu ini memadukan desain sporty khas Adidas dengan sentuhan karakter ikonik SpongeBob, menciptakan produk unik yang cocok untuk kolektor maupun penggemar streetwear.",
+    "category": "Black Edition Sneakers",
+    "image": "/foto/09.png"
+  },
+  {
+    "id": 10,
+    "title": "Dr. Martens 1460 Black Boots",
+    "price":  3500000,
+    "description": "Sepatu boots klasik bergaya premium dengan desain ikonik khas Dr. Martens. Dilengkapi material berkualitas, tampilan elegan, serta sol tebal yang nyaman digunakan untuk berbagai aktivitas. Cocok untuk gaya casual, streetwear, maupun semi-formal.",
+    "category": "Classic Edition",
+    "image": "/foto/08.png"
+  },
+  {
+    "id": 11,
+    "title": "One Set Crome Heart Hoodie & Boxer Pria Premium Graphic Gothic",
+    "price":  55000000,
+    "description": "Tampil bold dan berkelas dengan Set Hoodie & Boxer Pria Premium desain gothic yang terinspirasi gaya streetwear Los Angeles. Mengusung grafis simbol klasik bernuansa gothic, outfit ini memberi kesan maskulin, misterius, dan eksklusif. Hoodie dibuat dari bahan fleece premium yang tebal, hangat, dan nyaman dipakai, cocok untuk daily wear maupun hangout malam. Dipadukan dengan boxer pria berbahan cotton stretch yang lembut, adem, dan fleksibel untuk aktivitas sehari-hari. Desain full hitam dengan cetakan kontras membuat tampilan terlihat mahal, rapi, dan standout tanpa berlebihan.",
+    "category": "Los Angeles Style",
+    "image": "/foto/12.png"
+  },
+  {
+    "id": 12,
+    "title": "LV Belt",
+    "price":  5000000,
+    "description": "Tingkatkan gaya harian kamu dengan ikat pinggang pria desain premium yang tampil mewah dan berkelas. Dilengkapi buckle metal inisial “LV-style” dengan finishing elegan, cocok untuk outfit formal maupun kasual.",
+    "category": "Classic Edition",
+    "image": "/foto/07.png"
+  }
+]
