@@ -5,17 +5,19 @@ const Footer =()=> {
             <div className="mx-auto max-w-7xl px-4 py-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                     <p className="text-xs leading-relaxed opacity-90 max-w-xl">
                         <span className="font-semibold">
-                            Dr. Martens 1460 Black Boots
+                            RIZHOP OFFICIAL
                         </span>
                         <br />
-                        Sepatu boots klasik bergaya premium dengan desain ikonik khas Dr. Martens. Dilengkapi material berkualitas, tampilan elegan, serta sol tebal yang nyaman digunakan untuk berbagai aktivitas. Cocok untuk gaya casual, streetwear, maupun semi-formal.
+                        RIZHOP adalah aplikasi fashion online dengan konsep classic, bold, dan eksklusif. Menghadirkan koleksi outfit pilihan seperti jacket premium, boots, sneakers, tas, hingga aksesoris dengan nuansa vintage-modern yang berkelas.
+
+Dirancang untuk lo yang ingin tampil beda, maskulin, dan berkarakter. Setiap produk dikurasi dengan detail, menonjolkan kualitas, estetika, dan statement style yang kuat.
                     </p>
                     <p className="text-xs sm:text-right opacity-90">
                         <span className="font-medium">
-                            fathan
+                            NOMBER 
                         </span>
                         <br />
-                        banten
+                        +62 813-1686-0964
                     </p>
             </div>
         </footer>

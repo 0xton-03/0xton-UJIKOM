@@ -12,7 +12,7 @@ const PageBaseApp = ()=>{
 return (
         <div className="">
             
-                <Header to="/" cta="asd" />
+                <Header to="/" cta="Home" />
 
                 <Card className="max-w-80 mx-auto mt-20">
                     <CardHeader>

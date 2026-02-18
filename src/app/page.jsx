@@ -85,7 +85,7 @@ const PageHome = ()=>{
 </section>
          
          <div>
-            <Header to = "/base" cta ="layout"/>
+            <Header to = "/base" cta ="Check Diskon"/>
          </div>
 
       
