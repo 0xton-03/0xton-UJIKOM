@@ -14,21 +14,21 @@ return (
             
                 <Header to="/" cta="Home" />
 
-                <Card className="max-w-80 mx-auto mt-20">
+                <Card className="max-w-2xl mx-auto mt-20 shadow-2xl border-2 ">
                     <CardHeader>
                         <h1 className="text-2xl font-bold text-center">
                             Program Hitung diskon
                         </h1>
                     </CardHeader>
-                    <CardContent className="flex flex-col gap-4">
+                    <CardContent className="flex flex-col gap-8 p-12">
                         <div>
-                            <Input placeholder={"Harga Barang"} onChange={(e)=>setHarga(e.target.value)}/>
+                            <Input placeholder={"Harga Barang"} onChange={(e)=>setHarga(e.target.value)} className="h-14 text-xl px-6"/>
                         </div>
                         <div>
-                            <Input placeholder={"Diskon Barang"} onChange={(e)=>setDiskon(e.target.value)}/>
+                            <Input placeholder={"Diskon Barang (%)"} onChange={(e)=>setDiskon(e.target.value)}/>
                         </div>
-                    </CardContent>
-                    <CardFooter>
+                    </CardContent >
+                    <CardFooter className="p-6 pt-0">
                         <Diskon diskon={diskon} harga={harga}/>
                     </CardFooter>
                 </Card>

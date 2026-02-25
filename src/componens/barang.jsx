@@ -1,6 +1,7 @@
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card'
+import { numberToIDR } from '@/hook/numberTOIDR'
 import { Ghost } from 'lucide-react'
 import React from 'react'
 
@@ -28,9 +29,9 @@ const BarangCard = (props) => {
      
 <CardFooter className={`flex justify-between`}>
   {/* PRICE */}
-    <span className='text-red-800 font-bold text-3xl'>
-       RP. {props.barang.price}
-    </span>
+    <span className="text-red-800 font-bold text-3xl">
+  {numberToIDR(props.barang.price)}
+</span>
     
     <div>
       <Button variant={`default`} onClick = {props.onClick} >BUY</Button>

@@ -8,13 +8,16 @@ const Diskon = (props)=> {
     if (!props.diskon || !props.harga) return null
     return (
         <div className="w-full">
-            {
-                props.diskon >= 100 ? (
-                    <p className="text-center text-2xl">
-                            diskon tidak valid
-                    </p>
-                ): (
-                    <div className="flex flex-col gap-2 items-end">
+            {props.diskon > 100 ? (
+      /* Jika lebih dari 100, tampilkan pesan error */
+      <p className="text-center text-2xl text-red-500 font-bold">
+        Tidak Valid
+      </p>
+    ) : props.diskon === 100 ? (
+      /* Jika pas 100, tampilkan 0 (karena gratis) */
+      <p className="text-center text-2xl">0</p>
+    ) : (
+                    <div className="flex flex-col gap-2 items-end px-6 w-full">
                         <div className="w-full text-lg font-bold flex justify-between">
                             <span>
                                 Discount :
@@ -34,7 +37,7 @@ const Diskon = (props)=> {
                         </span>
                         <div className="flex justify-end items-end">
                             <span className="text-sm text-stone-950 line-through">
-                                -{numberToIDR(props.harga)}
+                               - {numberToIDR(props.harga)}
                             </span>
                             <span className="text-3xl font-bold">
                                 {numberToIDR(totalHarga)}

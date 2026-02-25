@@ -1,4 +1,7 @@
-
-export const numberToIDR = (angka) =>{
-return ` RP. ${angka}`
-}
+export const numberToIDR = (angka) => {
+  return new Intl.NumberFormat("id-ID", {
+    style: "currency",
+    currency: "IDR",
+    minimumFractionDigits: 0,
+  }).format(angka);
+};

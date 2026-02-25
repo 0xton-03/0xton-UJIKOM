@@ -14,6 +14,7 @@ import React, { useEffect } from "react";
 import daftarBarang from "./daftar barang/daftarBarang.json";
 import Diskon from "@/componens/diskon";
 import { Input } from "@/components/ui/input";
+import { numberToIDR } from "@/hook/numberTOIDR";
 
 
 
@@ -52,7 +53,7 @@ const PageHome = ()=>{
                 </Button>
             </DrawerTrigger>
                 <DrawerContent>
-                    <DrawerHeader >
+                     <DrawerHeader >
                         <DrawerTitle>
                             KERANJANG
                         </DrawerTitle>
@@ -66,19 +67,20 @@ const PageHome = ()=>{
                                             {item.title}
                                         </span>
                                         <span>
-                                            {item.price}
-                                        </span>
+                                            {numberToIDR(item.price)}
+                                            </span>
                                     </div>
                                 )
                             })
                           }  
+                          <Input placeHolder="Masukan Diskon (%)" onChange = {(event)=> setDiskon(event.target.value)} >
+                        </Input>
+                        <div className="w-full px-8 mt-4"> 
+                                <Diskon diskon={diskon} harga={Keranjang.reduce((acc, data) => (acc + data.price), 0)} />
+                        </div>
                     </ScrollArea>
                     <DrawerFooter>
-                        <Input placeHolder="Masukan Diskon" onChange = {(event)=> setDiskon(event.target.value)}>
-                        </Input>
-                        <Diskon diskon = {diskon} harga = {Keranjang.reduce((acc,data)=>(acc+=data.price),0)}>
 
-                        </Diskon>
                     </DrawerFooter>
                </DrawerContent>
          </Drawer>
